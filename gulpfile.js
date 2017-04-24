@@ -4,7 +4,7 @@ var gulp            = require('gulp'),
     uglify          = require('gulp-uglify'),
     concat          = require('gulp-concat'),
     rename          = require('gulp-rename'),
-    сssnano         = require('gulp-cssnano'),
+    cssnano         = require('gulp-cssnano'),
     cleancss        = require('gulp-clean-css'),
     groupcss        = require('gulp-group-css-media-queries'),
     imagemin        = require('gulp-imagemin'),
@@ -58,7 +58,7 @@ gulp.task('sass', function() {
         .pipe(cleancss())
         .pipe(groupcss())
         .pipe(gulp.dest('./app/css/'))
-        .pipe(сssnano())
+        .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./app/css/'))
 })
@@ -71,7 +71,7 @@ gulp.task('css',['sass'], function(){
         './app/css/main.min.css'
     ])
     .pipe(concat('styles.min.css'))
-    //.pipe(сssnano()) если необходимо
+    //.pipe(cssnano()) если необходимо
     .pipe(gulp.dest('./app/css/'))
     .pipe(browsersync.reload({stream: true}))
 })

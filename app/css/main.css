@@ -1,3 +1,35 @@
+@font-face {
+  font-family: roboto;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/roboto/Roboto-Regular.eot);
+  src: url(../fonts/roboto/Roboto-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto/Roboto-Regular.woff) format("woff"),url(../fonts/roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: roboto;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/roboto/Roboto-Bold.eot);
+  src: url(../fonts/roboto/Roboto-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto/Roboto-Bold.woff) format("woff"),url(../fonts/roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: open-sans;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/open-sans/OpenSans-Regular.eot);
+  src: url(../fonts/open-sans/OpenSans-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/open-sans/OpenSans-Regular.woff) format("woff"),url(../fonts/open-sans/OpenSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: open-sans;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/open-sans/OpenSans-Bold.eot);
+  src: url(../fonts/open-sans/OpenSans-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/open-sans/OpenSans-Bold.woff) format("woff"),url(../fonts/open-sans/OpenSans-Bold.ttf) format("truetype");
+}
+
 blockquote,
 body,
 code,
@@ -117,7 +149,7 @@ img {
 body {
   background-color: #f2f2f2;
   color: #000;
-  font-family: Arial;
+  font-family: open-sans;
   font-size: 2rem;
 }
 

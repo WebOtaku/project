@@ -1,5 +1,5 @@
 // Moduls
-@import './_mixins/smart-grid'
+@import '_mixins/smart-grid'
 @import 'fonts'
 @import 'media'
 @import 'vars'
@@ -7,12 +7,12 @@
 +reset()
 
 .wrapper
-    +wrapper()
+    +wrapper
 
 body
     background-color: #f2f2f2
     color: #000
-    font-family: 'Arial'
+    font-family: open-sans
     font-size: 2rem
 
 .header
@@ -29,7 +29,7 @@ body
 
     &__text
         +col()
-        +col-xl-12()        
+        +col-xl-12()
         color: brown
         text-indent: 1.75rem
 
