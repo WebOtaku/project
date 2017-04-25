@@ -10,28 +10,80 @@
     +wrapper
 
 body
-    background-color: #f2f2f2
+    background-image: url("../img/bg22.jpg")
+    background-size: cover
     color: #000
-    font-family: open-sans
     font-size: 2rem
+    font-family: open-sans, sans-serif
+    margin:
+        right: 15px
+        left: 15px
+
+a
+    text-decoration: none
 
 .header
     +row-flex()
     +justify-content(center)
+    +align-items(center)
     padding: 25px
-    
+    font-size: 2.25rem
+
+    &__icon
+        +col()
+        color: #00d5ff
+
     &__h1
-        color: green
+        +col()
+        color: #ffffff
+
 
 .quest
     +row-flex()
     +justify-content(center)
+    background-color: #ffffff
+    border: 4px solid #00d5ff
+    border-radius: 10px
 
     &__text
         +col()
         +col-xl-12()
-        color: brown
-        text-indent: 1.75rem
+        color: #00d5ff
+        padding: 10px
+        text-indent: 2rem
+
+    &__directions
+        +row-flex()
+        +justify-content(center)
+        padding: 10px
+
+        &-label
+            font-size: 1.5rem
+            color: #00d5ff
+            font-family: roboto, sans-serif
+
+        &-arrow
+            color: #000000
+            font-size: 2.5rem
+
+        &-link
+            +row-flex()
+            +justify-content(center)
+
+        #up
+            +col()
+            +col-12()
+
+        #left, #right
+            +col()
+            +col-6()
+            +col-sm-12()
+
+        #right
+            span
+                order: 1
+            em
+                order: 2
 
 .footer
     +row-flex()
@@ -39,4 +91,5 @@ body
     padding: 25px
 
     &__copy
-        color: green
+        +col()
+        color: #ffffff

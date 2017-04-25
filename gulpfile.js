@@ -66,7 +66,7 @@ gulp.task('sass', function() {
 // Concat CSS
 gulp.task('css',['sass'], function(){
     return gulp.src([
-        './app/libs/font-awesome/font-awesome.min.css',
+        //'./app/libs/font-awesome/font-awesome.min.css',
         // libraries
         './app/css/main.min.css'
     ])
