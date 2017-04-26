@@ -30,6 +30,22 @@
   src: url(../fonts/open-sans/OpenSans-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/open-sans/OpenSans-Bold.woff) format("woff"),url(../fonts/open-sans/OpenSans-Bold.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: brownhill;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/brownhill/Brownhill Script swash.eot");
+  src: url("../fonts/brownhill/Brownhill Script swash.eot?#iefix") format("embedded-opentype"),url("../fonts/brownhill/Brownhill Script swash.woff") format("woff"),url("../fonts/brownhill/Brownhill Script swash.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: brownhill;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/brownhill/Brownhill Script.eot");
+  src: url("../fonts/brownhill/Brownhill Script.eot?#iefix") format("embedded-opentype"),url("../fonts/brownhill/Brownhill Script.woff") format("woff"),url("../fonts/brownhill/Brownhill Script.ttf") format("truetype");
+}
+
 blockquote,
 body,
 code,
@@ -155,6 +171,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 .header {
@@ -180,11 +197,11 @@ a {
   margin-left: 15px;
   margin-right: 15px;
   word-wrap: break-word;
+  font-family: brownhill,sans-serif;
   text-align: center;
-  font-size: 2.25rem;
-  background-color: #fff;
-  width: 320px;
-  border: 2px solid #000;
+  font-size: 7rem;
+  padding: 10px;
+  background-color: rgba(255,255,255,.5);
   -webkit-border-radius: 10px;
   border-radius: 10px;
   color: #000;
@@ -200,10 +217,15 @@ a {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .quest__button {
@@ -214,9 +236,28 @@ a {
   word-wrap: break-word;
   width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
-  -webkit-flex-basis: 150px;
-  -ms-flex-preferred-size: 150px;
-  flex-basis: 150px;
+  width: 250px;
+  padding: 15px;
+  font-size: 2rem;
+  background-color: rgba(255,255,255,.5);
+  border: none;
+  font-style: oblique;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  outline: 0;
+  -webkit-transition: background .45s ease-in;
+  transition: background .45s ease-in;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.quest__button:hover {
+  background-color: rgba(255,255,255,.8);
+}
+
+.quest #doge {
+  display: none;
 }
 
 .footer {
