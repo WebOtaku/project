@@ -30,19 +30,19 @@ gulp.task('smartgrid', function() {
 	},
 	breakPoints: {
 	    xl: {
-	        'width': '1140px', /* -> @media (max-width: 1100px) */
-	        'fields': '15px' /* side fields */
+	        'width': '1100px', /* -> @media (max-width: 1100px) */
+	        'fields': '30px' /* side fields */
 	    },
 	    lg: {
 	        'width': '960px',
 	        'fields': '15px'
 	    },
 	    md: {
-	        'width': '720px',
+	        'width': '780px',
 	        'fields': '15px'
 	    },
 	    sm: {
-	        'width': '540px',
+	        'width': '560px',
 	        'fields': '15px'
 	    }
 	}
@@ -117,7 +117,7 @@ gulp.task('watch', ['browsersync', 'css', 'js'], function(){
     gulp.watch('./app/sass/**/*.sass',['css'])
     gulp.watch('./app/js/**/*.js', ['js'])
     gulp.watch('./app/php/**/*.php', browsersync.reload({stream: true}))
-    gulp.watch('./app/*.html', browsersync.reload)
+    gulp.watch('./app/**/*.html', browsersync.reload)
 })
 
 
@@ -139,7 +139,7 @@ gulp.task('build',['clean', 'css', 'js', 'img'], function(){
     .pipe(gulp.dest('./dist/js/'))
 
     var buildHTML = gulp.src([
-		'./app/*.html',
+		'./app/**/*.html',
 		'./app/.htaccess',
 	])
     .pipe(gulp.dest('./dist/'))

@@ -147,13 +147,10 @@ img {
 }
 
 body {
-  background-image: url(../img/bg.png);
+  background: url(../img/bg7.jpg) no-repeat;
   background-size: cover;
   color: #000;
-  font-size: 2rem;
   font-family: open-sans,sans-serif;
-  margin-right: 15px;
-  margin-left: 15px;
 }
 
 a {
@@ -174,21 +171,7 @@ a {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding: 25px;
-  font-size: 2.25rem;
-}
-
-.header__icon {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-left: 15px;
-  margin-right: 15px;
-  word-wrap: break-word;
-  color: brown;
 }
 
 .header__h1 {
@@ -197,7 +180,14 @@ a {
   margin-left: 15px;
   margin-right: 15px;
   word-wrap: break-word;
-  color: #2f2f22;
+  text-align: center;
+  font-size: 2.25rem;
+  background-color: #fff;
+  width: 320px;
+  border: 2px solid #000;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #000;
 }
 
 .quest {
@@ -214,68 +204,9 @@ a {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #fff;
-  border: 4px solid brown;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
 
-.quest__text {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-left: 15px;
-  margin-right: 15px;
-  word-wrap: break-word;
-  color: #2f2f22;
-  padding: 10px;
-  text-indent: 2rem;
-}
-
-.quest__directions {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-.quest__directions-label {
-  font-size: 1.5rem;
-  color: #2f2f22;
-  font-family: roboto,sans-serif;
-}
-
-.quest__directions-arrow {
-  color: brown;
-  font-size: 2.5rem;
-}
-
-.quest__directions-link {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.quest__directions #up {
+.quest__button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: 15px;
@@ -283,31 +214,9 @@ a {
   word-wrap: break-word;
   width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
-}
-
-.quest__directions #left,
-.quest__directions #right {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-left: 15px;
-  margin-right: 15px;
-  word-wrap: break-word;
-  width: -webkit-calc(50% - 30px);
-  width: calc(50% - 30px);
-}
-
-.quest__directions #right span {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.quest__directions #right em {
-  -webkit-box-ordinal-group: 3;
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
+  -webkit-flex-basis: 150px;
+  -ms-flex-preferred-size: 150px;
+  flex-basis: 150px;
 }
 
 .footer {
@@ -333,18 +242,13 @@ a {
   margin-left: 15px;
   margin-right: 15px;
   word-wrap: break-word;
-  color: #2f2f22;
+  color: #000;
 }
 
-@media screen and (max-width:1140px) {
+@media screen and (max-width:1100px) {
   .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .quest__text {
-    width: -webkit-calc(100% - 30px);
-    width: calc(100% - 30px);
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -355,22 +259,16 @@ a {
   }
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:780px) {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:560px) {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .quest__directions #left,
-  .quest__directions #right {
-    width: -webkit-calc(100% - 30px);
-    width: calc(100% - 30px);
   }
 }
