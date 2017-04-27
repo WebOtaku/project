@@ -10,13 +10,29 @@
     +wrapper
 
 body
-    background: url("../img/bg7.jpg") no-repeat
-    background-size:  cover
     font-family: open-sans, sans-serif
+    margin:
+        left: 15px
+        right: 15px
 
 a
     text-decoration: none
-    color: $textcolor
+
+#indexPage
+    background: url("../img/bg7.jpg") no-repeat
+    background-size:  cover
+
+#page1
+    background: url("../img/bg1.jpg") no-repeat
+    background-size:  cover
+
+#page2
+    background: url("../img/bg8.jpg") no-repeat
+    background-size:  cover
+
+#page3
+    background: url("../img/bg6.jpg") no-repeat
+    background-size:  cover
 
 .header
     +row-flex()
@@ -27,11 +43,13 @@ a
         +col()
         font-family: brownhill, sans-serif
         text-align: center
-        font-size: 7rem
+        font-size: 6rem
         padding: 10px
         background-color: $bgcolor
         border-radius: 10px
-        color: $textcolor
+
+        a
+            color: $titlecolor
 
 .quest
     +row-flex()
@@ -54,12 +72,21 @@ a
         transition: background 0.45s ease-in
         border-radius: 10px
         cursor: pointer
+        color: $textcolor
 
         &:hover
             background-color: $hover
 
+    &__text
+        background-color: $bgcolor
+        border-radius: 10px
+        padding: 15px
+        font-size: 1rem
+        color: $textcolor
+
     #doge
         display: none
+        border-radius: 10px
 
 .footer
     +row-flex()

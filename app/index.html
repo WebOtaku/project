@@ -6,16 +6,18 @@
         <meta name="description" content="study project"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
-    <body>
+    <body id="indexPage">
         <header class="header">
-            <h1 class="header__h1">IT Adventure</h1>
+            <h1 class="header__h1"><a href="index.html">IT Adventure</a></h1>
         </header>
         <article class="main">
             <div class="wrapper">
                 <div class="quest">
-                    <button class="quest__button" id="start"><a href="html/page1.html">Старт</a></button>
-                    <button class="quest__button" id="close">WOW</button>
-                    <img src="img/wow.jpg" alt="doge" id="doge">
+                    <a href="html/page1.html">
+                        <button class="quest__button" id="start">Старт</button>
+                    </a>
+                    <button class="quest__button" id="wow">WOW</button>
+                    <img src="img/wow.jpg" alt="doge" id="doge"/>
                 </div>
             </div>
         </article>
