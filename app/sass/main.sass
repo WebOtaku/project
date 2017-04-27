@@ -1,7 +1,7 @@
 // Moduls
 @import '_mixins/smart-grid'
-@import 'fonts'
 @import 'media'
+@import 'fonts'
 @import 'vars'
 
 +reset()
@@ -11,9 +11,6 @@
 
 body
     font-family: open-sans, sans-serif
-    margin:
-        left: 15px
-        right: 15px
 
 a
     text-decoration: none
@@ -37,7 +34,6 @@ a
 .header
     +row-flex()
     +justify-content(center)
-    padding: 25px
 
     &__h1
         +col()
@@ -56,19 +52,15 @@ a
     +flex-direction(column)
     +align-items(center)
 
-    &__button
+    &__link
         +col()
         +col-12()
+        text-align: center
         width: 250px
         padding: 15px
         font-size: 2rem
+        font-family: roboto, sans-serif
         background-color: $bgcolor
-        border: none
-        font-style: oblique
-        margin:
-            top: 15px
-            bottom: 15px
-        outline: none
         transition: background 0.45s ease-in
         border-radius: 10px
         cursor: pointer
@@ -91,8 +83,12 @@ a
 .footer
     +row-flex()
     +justify-content(center)
-    padding: 25px
 
     &__copy
         +col()
         color: $textcolor
+
+.header, .quest, .footer, .quest__link
+    margin:
+        top: 25px
+        bottom: 25px
