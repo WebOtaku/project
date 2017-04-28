@@ -15,6 +15,8 @@ body
 a
     text-decoration: none
 
+input
+
 #indexPage
     background: url("../img/bg7.jpg") no-repeat
     background-size:  cover
@@ -41,7 +43,6 @@ a
         text-align: center
         font-size: 6rem
         padding: 10px
-        background-color: $bgcolor
         border-radius: 10px
 
         a
@@ -70,11 +71,32 @@ a
             background-color: $hover
 
     &__text
+        text-align: center
         background-color: $bgcolor
         border-radius: 10px
         padding: 15px
         font-size: 1rem
         color: $textcolor
+
+    &__form
+        +col()
+        +col-5()
+        +col-xl-6()
+        +col-lg-7()
+        +col-md-9()
+        +col-sm-12()
+        border-radius: 10px
+        padding: 15px
+        margin-top: 15px
+        color: $textcolor
+        background-color: $bgcolor
+
+        &-header
+            font-size: 1.25rem
+            font-weight: bold
+
+        &-label
+            display: block
 
     #doge
         display: none

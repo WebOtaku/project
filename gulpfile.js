@@ -83,7 +83,7 @@ gulp.task('common-js', function() {
 		'./app/js/**/*.js'
 	])
 	.pipe(concat('common.min.js'))
-	.pipe(uglify())
+	.pipe(uglify()).on('error', notify.onError())
 	.pipe(gulp.dest('app/js'));
 })
 
