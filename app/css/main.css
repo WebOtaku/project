@@ -170,7 +170,7 @@ a {
   text-decoration: none;
 }
 
-#indexPage {
+#index {
   background: url(../img/bg7.jpg) no-repeat;
   background-size: cover;
 }
@@ -304,6 +304,13 @@ a {
 
 .quest__form-label {
   display: block;
+}
+
+.quest__form-button {
+  padding: 15px 30px;
+  font-size: 1.15rem;
+  font-family: roboto,sans-serif;
+  float: right;
 }
 
 .quest #doge {
