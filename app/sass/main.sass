@@ -23,7 +23,7 @@ a
     background: url("../img/bg1.jpg") no-repeat
     background-size:  cover
 
-#page2
+#page2, #page2_1
     background: url("../img/bg8.jpg") no-repeat
     background-size:  cover
 
@@ -69,7 +69,7 @@ a
             background-color: $hover
 
     &__text
-        text-align: center
+        text-indent: 1.75rem
         background-color: $bgcolor
         border-radius: 10px
         padding: 15px
@@ -95,6 +95,8 @@ a
 
         &-label
             display: block
+            float: left
+            clear: both
 
         &-button
             padding: 15px 30px
@@ -102,6 +104,14 @@ a
             font-family: roboto, sans-serif
             float: right
 
+        &-code
+            margin-left: 5px
+            display: block
+            float: right
+            font-size: 1.25rem
+
+        #task
+            font-size: 1.25rem
 
     #doge
         display: none

@@ -120,7 +120,6 @@ gulp.task('watch', ['browsersync', 'css', 'js'], function(){
     gulp.watch('./app/**/*.html', browsersync.reload)
 })
 
-
 // Build project
 gulp.task('build',['clean', 'css', 'js', 'img'], function(){
     var buildCSS = gulp.src([

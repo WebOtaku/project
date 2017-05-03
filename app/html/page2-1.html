@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>IT Adventure</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="study project"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body id="page2_1" onload="disable()">
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
+            </header>
+            <article class="main">
+                <div class="quest">
+                    <div class="quest__text">
+                        <p>Когда очередь дошла до вас, вы неуверенно подошли к стене. На уровне вашей груди сияла панель с рисунком руки. Вы прикладываете свою ладонь к рисунку, и перед вами, словно из ниоткуда, появляется образ молодой девушки.</p>
+                        <p>«Вы чужеземец в этих землях. К сожалению, мы не можем пустить вас в Акрулабан. Примете ли вы задание, чтобы доказать ваши добрые намерения?</p>
+                        <p>От удивления вы не заметили, что стоите с открытым ртом, но нашли силы кивнуть.</p>
+                        <p>«Отправляйтесь на парящий остров, что лежи к Югу. Там, в руинах Хиффнар – могучих предтеч, покоится древний артефакт. Принесите его.» Девушка исчезла, оставив вас наедине с собой, но подумать вас не дали – очередь успела вырасти, и пришлось удалиться.</p>
+                    </div>
+                    <form class="quest__form" onsubmit="check()">
+                        <p class="quest__form-header">В каком варианте переменные заданы не верно:<p>
+                        <label for="a1" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a1" value="0;1;2"/>
+                            <code class="quest__form-code">var x = 0; y = 1; z = 2;</code>
+                        </label>
+                        <label for="a2" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a2" value="1,2,3"/>
+                            <code class="quest__form-code">var x = 0, y = 1, z = 2;</code>
+                        </label>
+                        <label for="a3" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a3" value="var"/>
+                            <code class="quest__form-code">var x = 0;<br/>var y = 1;<br/>var z = 2;<br/></code>
+                        </label>
+                        <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page3" disabled/>
+                    </form>
+                </div>
+            </article>
+            <footer class="footer">
+                <p class="footer__copy">Vlad Ovsaynnikov, Daniil Gogolev &copy;</p>
+            </footer>
+        </div>
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/styles.min.css"/>
+        <script src="../js/scripts.min.js" async></script>
+    </body>
+</html>

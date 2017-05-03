@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>IT Adventure</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="study project"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body id="page3" onload="disable()">
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
+            </header>
+            <article class="main">
+                <div class="quest">
+                    <div class="quest__text">
+                        <p>«Ты пришел. Ты ступил в мою обитель. Что ты хочешь здесь найти, незнакомец?»</p>
+                        <p>«Ну и твари здесь» - думаете, вы, и все-таки спрашиваете у существа чем оно является.</p>
+                        <p>«Я – хранитель этого места. Никто не проходит через эту чащу живым без моего дозволения. Если хочешь ступить дальше – ответь на мой вопрос».</p>
+                        <p>Существо, покачиваясь, вышло на свет, и вы увидели перед собой живое дерево. Крохотные глазки-шишки изучали вас с интересом, а ветви рук закрывали путь. Затаив дыхание и, на всякий случай, положив руку на рукоять меча, вы стали ожидать вопроса.</p>
+                    </div>
+                    <form class="quest__form" onsubmit="check()">
+                        <p class="quest__form-header">Что будет храниться в переменно "а":<p>
+                        <pre id="task"><code><span>var matrix = [ [], [], [], [] ];<br/>for (var i=0; i<4; i++) {<br/>  for (var j=0; j<4; j++) {<br/>    matrix[i][j] = i*j;<br/>  }<br/>}<br/>var a = matrix[1][2];
+                        </span></code></pre>
+                        <label for="a1" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a1" value="2"/>
+                            2
+                        </label>
+                        <label for="a2" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a2" value="0,1,2,3"/>
+                            [ 0, 1, 2, 3 ]
+                        </label>
+                        <label for="a3" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a3" value="4"/>
+                            4
+                        </label>
+                        <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page4" disabled/>
+                    </form>
+                </div>
+            </article>
+            <footer class="footer">
+                <p class="footer__copy">Vlad Ovsaynnikov, Daniil Gogolev &copy;</p>
+            </footer>
+        </div>
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/styles.min.css"/>
+        <script src="../js/scripts.min.js" async></script>
+    </body>
+</html>
