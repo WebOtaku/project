@@ -6,7 +6,7 @@
         <meta name="description" content="study project"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
-    <body id="page2_1" onload="disable()">
+    <body id="page2-1" onload="disable()">
         <div class="wrapper">
             <header class="header">
                 <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
@@ -22,16 +22,16 @@
                     <form class="quest__form" onsubmit="check()">
                         <p class="quest__form-header">В каком варианте переменные заданы не верно:<p>
                         <label for="a1" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a1" value="0;1;2"/>
-                            <code class="quest__form-code">var x = 0; y = 1; z = 2;</code>
-                        </label>
-                        <label for="a2" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a2" value="1,2,3"/>
+                            <input type="radio" name="answer" class="quest__form-check" id="a1"/>
                             <code class="quest__form-code">var x = 0, y = 1, z = 2;</code>
                         </label>
-                        <label for="a3" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a3" value="var"/>
+                        <label for="a2" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a2"/>
                             <code class="quest__form-code">var x = 0;<br/>var y = 1;<br/>var z = 2;<br/></code>
+                        </label>
+                        <label for="a3" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a3" placeholder=" "/>
+                            <code class="quest__form-code">var x = 0; y = 1; z = 2;</code>
                         </label>
                         <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page3" disabled/>
                     </form>

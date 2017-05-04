@@ -6,7 +6,7 @@
         <meta name="description" content="study project"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
-    <body id="page3" onload="disable()">
+    <body id="page3-1" onload="disable()">
         <div class="wrapper">
             <header class="header">
                 <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
@@ -24,15 +24,15 @@
                         <pre id="task"><code><span>var matrix = [ [], [], [], [] ];<br/>for (var i=0; i<4; i++) {<br/>  for (var j=0; j<4; j++) {<br/>    matrix[i][j] = i*j;<br/>  }<br/>}<br/>var a = matrix[1][2];
                         </span></code></pre>
                         <label for="a1" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a1" value="2"/>
+                            <input type="radio" name="answer" class="quest__form-check" id="a1" placeholder=" "/>
                             2
                         </label>
                         <label for="a2" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a2" value="0,1,2,3"/>
-                            [ 0, 1, 2, 3 ]
+                            <input type="radio" name="answer" class="quest__form-check" id="a2"/>
+                            [0,1,2,3]
                         </label>
                         <label for="a3" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a3" value="4"/>
+                            <input type="radio" name="answer" class="quest__form-check" id="a3"/>
                             4
                         </label>
                         <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page4" disabled/>
