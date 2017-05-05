@@ -20,3 +20,8 @@ function disable() {
         document.getElementById('btn1').removeAttribute('disabled');
     }
 }
+window.onload = function () {
+    document.getElementById('start').focus();
+    document.querySelector('quest__link').focus();
+    document.querySelector('quest__form-button').focus();
+};

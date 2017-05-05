@@ -180,9 +180,13 @@ a {
   background-size: cover;
 }
 
-#page2,
-#page2-1 {
+#page2 {
   background: url(../img/bg8.jpg) no-repeat;
+  background-size: cover;
+}
+
+#page2-1 {
+  background: url(../img/bg19.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -281,6 +285,7 @@ a {
   border-radius: 10px;
   cursor: pointer;
   color: #09f;
+  tab-index: 1;
 }
 
 .quest__link:hover {
@@ -329,6 +334,7 @@ a {
   font-size: 1.15rem;
   font-family: roboto,sans-serif;
   float: right;
+  tab-index: 1;
 }
 
 .quest__form-code {
