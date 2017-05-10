@@ -210,6 +210,41 @@ a {
   background-size: cover;
 }
 
+#page5 {
+  background: url(../img/bg6.jpg) no-repeat;
+  background-size: cover;
+}
+
+#page7 {
+  background: url(../img/bg20.jpg) no-repeat;
+  background-size: cover;
+}
+
+#page8 {
+  background: url(../img/bg17.jpg) no-repeat;
+  background-size: cover;
+}
+
+#page9 {
+  background: url(../img/bg21.jpg) no-repeat;
+  background-size: cover;
+}
+
+#page9-1 {
+  background: url(../img/bg9.jpg) no-repeat;
+  background-size: cover;
+}
+
+#page10 {
+  background: url(../img/bg23.jpg) no-repeat;
+  background-size: cover;
+}
+
+#page10-1 {
+  background: url(../img/bg22.jpg) no-repeat;
+  background-size: cover;
+}
+
 .header {
   display: -webkit-box;
   display: -webkit-flex;

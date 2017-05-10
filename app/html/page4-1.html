@@ -6,7 +6,7 @@
         <meta name="description" content="study project"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
-    <body id="page4-1">
+    <body id="page4-1" onload="disable()">
         <div class="wrapper">
             <header class="header">
                 <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
@@ -18,6 +18,26 @@
                         <p>Поговорив с вами и узнав цель вашего визита, они решили, что вы неопасны и могут отпустить вас с миром, но опять, же все не так просто, их поселение защищено барьером с механизмом работы похожим на ворота Акрулабана.</p>
                         <p>Сказав, что это будет просто, так как вы уже встречали такую систему, подойдя к системе, вы коснулись панели, но в этот раз появилась не девушка, а мужчина он также задал вам вопрос.</p>
                     </div>
+                    <form class="quest__form" onsubmit="check()">
+                        <p class="quest__form-header">Как получить доступ к свойствам объекта:<p>
+                        <label for="a1" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a1"/>
+                            <code class="quest__form-code">objectName.propertyName()</code>
+                        </label>
+                        <label for="a2" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a2"/>
+                            <code class="quest__form-code">objectName('propertyName')</code>
+                        </label>
+                        <label for="a3" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a3" placeholder=" "/>
+                            <code class="quest__form-code">objectName.propertyName</code>
+                        </label>
+                        <label for="a4" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a4"/>
+                            <code class="quest__form-code">objectName.getProperty('propertyName')</code>
+                        </label>
+                        <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page5" disabled/>
+                    </form>
                 </div>
             </article>
             <footer class="footer">

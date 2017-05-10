@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>IT Adventure</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="study project"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body id="page8-1" onload="disable()">
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
+            </header>
+            <article class="main">
+                <div class="quest">
+                    <div class="quest__text">
+                        <p>Едва вы открыли дверь, на вас взглянул мужчина, и, как показалось, он ждал здесь уже довольно долго. Он представился Аттаком, и являлся хозяином этого дома. Он оказался радушным, и вы коротали время до вечера за дружеской беседой. Он узнал обо всем вашем приключении, и, наконец, вы спросили, не знает ли он о летающих островах.</p>
+                        <p>«Кто же не знает о них, друг мой. Но зачем ты так рвешься туда? Это слишком опасное место, даже для такого, как ты. Впрочем, если тебе действительно это нужно, я помогу тебе. Но, сперва спрошу кое о чем. Ты готов?»</p>
+                        <p>После вашего утвердительного кивка Аттак задумался, но совсем ненадолго, и задал вопрос.</p>
+                    </div>
+                    <form class="quest__form" onsubmit="check()">
+                        <p class="quest__form-header">Как задать стили выбраному элементу:<p>
+                        <label for="a1" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a1"/>
+                            <code class="quest__form-code">element.setProperty('style', 'styleName')</code>
+                        </label>
+                        <label for="a2" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a2" placeholder=" "/>
+                            <code class="quest__form-code">element.style.styleName</code>
+                        </label>
+                        <label for="a3" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a3"/>
+                            <code class="quest__form-code">element('style', 'styleName')</code>
+                        </label>
+                        <label for="a4" class="quest__form-label">
+                            <input type="radio" name="answer" class="quest__form-check" id="a4"/>
+                            <code class="quest__form-code">element.style('styleName')</code>
+                        </label>
+                        <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page8-2" disabled/>
+                    </form>
+                </div>
+            </article>
+            <footer class="footer">
+                <p class="footer__copy">Vlad Ovsaynnikov, Daniil Gogolev &copy;</p>
+            </footer>
+        </div>
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/styles.min.css"/>
+        <script src="../js/scripts.min.js" async></script>
+    </body>
+</html>
