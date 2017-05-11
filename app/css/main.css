@@ -177,115 +177,96 @@ p {
 
 #index {
   background: url(../img/bg7.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page1 {
   background: url(../img/bg1.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page2 {
   background: url(../img/bg8.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page2-1 {
   background: url(../img/bg19.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page3 {
   background: url(../img/bg2.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page3-1 {
   background: url(../img/bg11.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page4 {
   background: url(../img/bg10.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page4-1 {
   background: url(../img/bg12.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page5 {
   background: url(../img/bg6.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page5-1 {
   background: url(../img/bg24.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page6 {
   background: url(../img/bg25.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page7 {
   background: url(../img/bg20.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page8 {
   background: url(../img/bg17.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page8-1 {
   background: url(../img/bg26.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page8-2 {
   background: url(../img/bg26.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page9 {
   background: url(../img/bg21.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page9-1 {
   background: url(../img/bg9.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page10 {
   background: url(../img/bg23.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
 #page10-1 {
   background: url(../img/bg22.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
 
@@ -359,7 +340,6 @@ p {
   font-family: roboto,sans-serif;
   background-color: rgba(255,255,255,.8);
   -webkit-transition: background .45s ease-in;
-  -o-transition: background .45s ease-in;
   transition: background .45s ease-in;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -428,11 +408,21 @@ p {
   background-color: #00bfff;
 }
 
+.quest__form-button:disabled {
+  background-color: #9fd1ff;
+}
+
 .quest__form-code {
   margin-left: 5px;
   display: block;
   float: right;
   font-size: 1.25rem;
+}
+
+.quest__form-check {
+  outline: 0;
+  width: 14px;
+  height: 14px;
 }
 
 .quest__form #task {

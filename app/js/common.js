@@ -1,4 +1,7 @@
-// DOGE WOW!!!
+'use strict';
+/**
+ * DOGE WOW!!!
+ */
 function wow() {
     var btn_wow = document.getElementById('wow');
     var doge = document.getElementById('doge');
@@ -10,7 +13,9 @@ function wow() {
         doge.style.display = 'none';
     }
 }
-// Unable button
+/**
+ * Unable button when radio buttons change their condition.
+ */
 function disable() {
     var answer = document.getElementsByName('answer');
     for (var i = 0; i < answer.length; i++) {

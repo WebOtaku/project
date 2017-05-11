@@ -61,7 +61,7 @@ gulp.task('sass', function() {
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./app/css/'))
-})
+});
 
 // Concat CSS
 gulp.task('css',['sass'], function(){
@@ -74,7 +74,7 @@ gulp.task('css',['sass'], function(){
     //.pipe(cssnano()) если необходимо
     .pipe(gulp.dest('./app/css/'))
     .pipe(browsersync.reload({stream: true}))
-})
+});
 
 // Minify JS
 gulp.task('common-js', function() {
@@ -85,7 +85,7 @@ gulp.task('common-js', function() {
 	.pipe(concat('common.min.js'))
 	.pipe(uglify()).on('error', notify.onError())
 	.pipe(gulp.dest('app/js'));
-})
+});
 
 // Concat JS
 gulp.task('js',['common-js'], function(){
@@ -98,7 +98,7 @@ gulp.task('js',['common-js'], function(){
     //.pipe(uglify()) если необходимо
     .pipe(gulp.dest('./app/js/'))
     .pipe(browsersync.reload({stream: true}));
-})
+});
 
 // Cache Images
 gulp.task('img', function(){
@@ -110,7 +110,7 @@ gulp.task('img', function(){
         une: [pngquant()]
     })))
     .pipe(gulp.dest('./dist/img/'))
-})
+});
 
 // Gulp watch
 gulp.task('watch', ['browsersync', 'css', 'js'], function(){
@@ -118,13 +118,13 @@ gulp.task('watch', ['browsersync', 'css', 'js'], function(){
     gulp.watch('./app/js/**/*.js', ['js'])
     gulp.watch('./app/php/**/*.php', browsersync.reload({stream: true}))
     gulp.watch('./app/**/*.html', browsersync.reload)
-})
+});
 
 // Build project
 gulp.task('build',['clean', 'css', 'js', 'img'], function(){
     var buildCSS = gulp.src([
 		'!./app/css/main.min.css',
-		'./app/css/*.css',
+		'./app/css/*.css'
 	])
     .pipe(gulp.dest('./dist/css/'))
 
@@ -145,7 +145,7 @@ gulp.task('build',['clean', 'css', 'js', 'img'], function(){
 
     var buildPHP = gulp.src('./app/php/*.php')
     .pipe(gulp.dest('./dist/php/'))
-})
+});
 
 // Settings BrowserSync
 gulp.task('browsersync', function(){
@@ -155,17 +155,17 @@ gulp.task('browsersync', function(){
         },
         notify: false
     })
-})
+});
 
 // Del dist
 gulp.task('clean', function(){
     return del.sync('dist')
-})
+});
 
 // Clear cache
 gulp.task('clear', function(){
     return cache.clearAll()
-})
+});
 
 // default
 gulp.task('default', ['watch'])

@@ -1,2 +1,4 @@
-# project
-study project
+# Study Project
+
+Web quest.
+Warning: opens many tabs!!

@@ -1,5 +1,8 @@
-// Moduls
+/**
+ * Mixins & Modulus
+ */
 @import '_mixins/smart-grid'
+@import '_mixins/bg-cover'
 @import 'media'
 @import 'fonts'
 @import 'vars'
@@ -21,80 +24,61 @@ p
         bottom: 3px
 
 #index
-    background: url("../img/bg7.jpg") no-repeat
-    background-size:  cover
+    +bg-cover("../img/bg7.jpg")
 
 #page1
-    background: url("../img/bg1.jpg") no-repeat
-    background-size:  cover
+    +bg-cover("../img/bg1.jpg")
 
 #page2
-    background: url("../img/bg8.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg8.jpg")
 
 #page2-1
-    background: url("../img/bg19.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg19.jpg")
 
 #page3
-    background: url("../img/bg2.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg2.jpg")
 
 #page3-1
-    background: url("../img/bg11.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg11.jpg")
 
 #page4
-    background: url("../img/bg10.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg10.jpg")
 
 #page4-1
-    background: url("../img/bg12.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg12.jpg")
 
 #page5
-    background: url("../img/bg6.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg6.jpg")
 
 #page5-1
-    background: url("../img/bg24.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg24.jpg")
 
 #page6
-    background: url("../img/bg25.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg25.jpg")
 
 #page7
-    background: url("../img/bg20.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg20.jpg")
 
 #page8
-    background: url("../img/bg17.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg17.jpg")
 
 #page8-1
-    background: url("../img/bg26.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg26.jpg")
 
 #page8-2
-    background: url("../img/bg26.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg26.jpg")
 
 #page9
-    background: url("../img/bg21.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg21.jpg")
 
 #page9-1
-    background: url("../img/bg9.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg9.jpg")
 
 #page10
-    background: url("../img/bg23.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg23.jpg")
 
 #page10-1
-    background: url("../img/bg22.jpg") no-repeat
-    background-size: cover
+    +bg-cover("../img/bg22.jpg")
 
 .header
     +row-flex()
@@ -180,11 +164,19 @@ p
             &:hover
                 background-color: $hoverBtn
 
+            &:disabled
+                background-color: $disBtn
+
         &-code
             margin-left: 5px
             display: block
             float: right
             font-size: 1.25rem
+
+        &-check
+            outline: none
+            width: 14px
+            height: 14px
 
         #task
             font-size: 1.25rem

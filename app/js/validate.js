@@ -1,4 +1,7 @@
-// Check answer
+'use strict';
+/**
+ * Checking answer.
+ */
 function check(){
     var answer = document.getElementsByName('answer');
     for(var i = 0;i < answer.length;i++){
