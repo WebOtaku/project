@@ -9,7 +9,7 @@
     <body id="page10" onload="disable()">
         <div class="wrapper">
             <header class="header">
-                <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
+                <h1 class="header__h1"><a href="../index.html">Stone Golem</a></h1>
             </header>
             <article class="main">
                 <div class="quest">
@@ -18,30 +18,28 @@
                         <p>А затем существо задало вопрос.</p>
                     </div>
                     <form class="quest__form" onsubmit="check()">
-                        <p class="quest__form-header">Как задать стили выбраному элементу:<p>
+                        <p class="quest__form-header">Чему равно такое выражение:<p>
+                        <p>[] + false - null + true</p>
                         <label for="a1" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a1"/>
-                            <code class="quest__form-code">element.setProperty('style', 'styleName')</code>
+                            <input type="radio" name="answer" class="quest__form-check" id="a1" placeholder=" "/>
+                            NaN
                         </label>
                         <label for="a2" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a2" placeholder=" "/>
-                            <code class="quest__form-code">element.style.styleName</code>
+                            <input type="radio" name="answer" class="quest__form-check" id="a2"/>
+                            0
                         </label>
                         <label for="a3" class="quest__form-label">
                             <input type="radio" name="answer" class="quest__form-check" id="a3"/>
-                            <code class="quest__form-code">element('style', 'styleName')</code>
+                            undefined
                         </label>
                         <label for="a4" class="quest__form-label">
                             <input type="radio" name="answer" class="quest__form-check" id="a4"/>
-                            <code class="quest__form-code">element.style('styleName')</code>
+                            1
                         </label>
                         <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page10-1" disabled/>
                     </form>
                 </div>
             </article>
-            <footer class="footer">
-                <p class="footer__copy">Vlad Ovsaynnikov, Daniil Gogolev &copy;</p>
-            </footer>
         </div>
         <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="../css/styles.min.css"/>

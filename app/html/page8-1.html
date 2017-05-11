@@ -8,9 +8,6 @@
     </head>
     <body id="page8-1" onload="disable()">
         <div class="wrapper">
-            <header class="header">
-                <h1 class="header__h1"><a href="../index.html">IT Adventure</a></h1>
-            </header>
             <article class="main">
                 <div class="quest">
                     <div class="quest__text">
@@ -19,30 +16,27 @@
                         <p>После вашего утвердительного кивка Аттак задумался, но совсем ненадолго, и задал вопрос.</p>
                     </div>
                     <form class="quest__form" onsubmit="check()">
-                        <p class="quest__form-header">Как задать стили выбраному элементу:<p>
+                        <p class="quest__form-header">Как определить длину строки:<p>
                         <label for="a1" class="quest__form-label">
                             <input type="radio" name="answer" class="quest__form-check" id="a1"/>
-                            <code class="quest__form-code">element.setProperty('style', 'styleName')</code>
+                            С помощью свойства <code class="quest__form-code">strLength</code>
                         </label>
                         <label for="a2" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a2" placeholder=" "/>
-                            <code class="quest__form-code">element.style.styleName</code>
+                            <input type="radio" name="answer" class="quest__form-check" id="a2"/>
+                             С помощью метода <code class="quest__form-code">length()</code>
                         </label>
                         <label for="a3" class="quest__form-label">
                             <input type="radio" name="answer" class="quest__form-check" id="a3"/>
-                            <code class="quest__form-code">element('style', 'styleName')</code>
+                            С помощью метода <code class="quest__form-code">strLength</code>
                         </label>
                         <label for="a4" class="quest__form-label">
-                            <input type="radio" name="answer" class="quest__form-check" id="a4"/>
-                            <code class="quest__form-code">element.style('styleName')</code>
+                            <input type="radio" name="answer" class="quest__form-check" id="a4" placeholder=" "/>
+                            С помощью свойства <code class="quest__form-code">length</code>
                         </label>
                         <input type="submit" value="Ответить" class="quest__form-button" id="btn1" placeholder="page8-2" disabled/>
                     </form>
                 </div>
             </article>
-            <footer class="footer">
-                <p class="footer__copy">Vlad Ovsaynnikov, Daniil Gogolev &copy;</p>
-            </footer>
         </div>
         <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="../css/styles.min.css"/>
